@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleativi2.css">
+</head>
+<body>
+
+    <div class = "container">
+        <h1>Calculadora</h1>
+        <br><br><br><br><br><br>
+        <input type="number" id="numInput" placeholder="Digite o primeiro número: ">
+        <input type="number2" id="numInput2" placeholder="Digite o segundo número: "><br><br>
+        <button onclick="soma()">Soma</button>
+        <button onclick="sub()">Subtração</button><br><br>
+        <button onclick="multi()">Multiplicação</button>
+        <button onclick="div()">Divisão</button>
+        <p id="resultado"></p>
+    </div>
+    <script>
+        function soma(){
+            let num1 = parseInt(document.getElementById("numInput").value);
+            let num2 = parseInt(document.getElementById("numInput2").value);
+            let resultado = document.getElementById("resultado");
+            let soma = num1 + num2;
+
+            resultado.innerHTML = `<span style="font-size: 20px; color: green; font-weight: bold;">${soma}</span>`;
+        }
+        function sub(){
+            let num1 = parseInt(document.getElementById("numInput").value);
+            let num2 = parseInt(document.getElementById("numInput2").value);
+            let resultado = document.getElementById("resultado");
+            let sub = num1 - num2;
+
+            resultado.innerHTML = `<span style="font-size: 20px; color: green; font-weight: bold;">${sub}</span>`;
+        }
+        function multi(){
+            let num1 = parseInt(document.getElementById("numInput").value);
+            let num2 = parseInt(document.getElementById("numInput2").value);
+            let resultado = document.getElementById("resultado");
+            let multi = num1 * num2;
+
+            resultado.innerHTML = `<span style="font-size: 20px; color: green; font-weight: bold;">${multi}</span>`;
+        }
+        function div(){
+            let num1 = parseInt(document.getElementById("numInput").value);
+            let num2 = parseInt(document.getElementById("numInput2").value);
+            let resultado = document.getElementById("resultado");
+            let div = num1 / num2;
+
+            resultado.innerHTML = `<span style="font-size: 20px; color: green; font-weight: bold;">${div}</span>`;
+        }
+   </script>
+</body>
+</html>
