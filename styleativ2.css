@@ -1,0 +1,26 @@
+body{
+    position: relative;
+    top: 70px;
+    background-color: blanchedalmond;
+}
+
+.container{
+    text-align: center;
+}
+
+button{
+    background-color: rgb(87, 80, 73);
+    color: aliceblue;
+    padding: 10px;
+    font-size: 15px;
+    width: 120px;
+    height: 100%;
+}
+
+input{
+    padding: 10px;
+    background-color: rgb(222, 208, 194);
+    width: 200px;
+    height: 100%;
+    font-size: 15px;
+}
